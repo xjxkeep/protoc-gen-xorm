@@ -1,4 +1,4 @@
-module g.echo.tech/dev/protoc-gen-xorm
+module github.com/xjxkeep/protoc-gen-xorm
 
 go 1.17
 
