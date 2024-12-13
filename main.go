@@ -65,7 +65,7 @@ func (x *{{.EnumName}}) ToDB() ([]byte, error) {
 
 // Value when parser where args
 func (x {{.EnumName}}) Value() (driver.Value, error) {
-	return {{.EnumName}}_name[int32(x)], nil
+	return strings.TrimPrefix({{.EnumName}}_name[int32(x)], "{{.Prefix}}"+"_"), nil
 }
 `))
 
